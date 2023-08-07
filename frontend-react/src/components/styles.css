@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.initial-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.initial-info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px 0px 40px 0px;
+}
+.initial-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+}
+
+.initial-button {
+  padding: 10px 30px;
+  margin: 0px 14px;
+  background-color: blue;
+  border: none;
+  border-radius: 20px;
+  width: 180px;
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.login-container {
+  border: 1px solid #bfbfbf;
+  width: 550px !important;
+  margin-top: 30px;
+  padding: 0px 0px 20px 0px !important;
+  border-radius: 20px;
+  min-height: 450px;
+  box-shadow: 4px 4px 12px #bfbfbf;
+}
+.login-info {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.login-label {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.register-container {
+  border: 1px solid #bfbfbf;
+  width: 550px !important;
+  margin-top: 30px;
+  padding: 0px 0px 20px 0px !important;
+  border-radius: 20px;
+  min-height: 580px;
+  box-shadow: 4px 4px 12px #bfbfbf;
+}
+.country-code {
+  width: 266px;
+}
+.error-msg {
+  font-size: 14px;
+  color: red;
+}
+.server-status {
+  font-family: 16px;
+}
+.green {
+  color: green;
+  font-weight: bold;
+}
+.red {
+  color: red;
+  font-weight: bold;
+}
+.user-img {
+  height: 200px;
+  width: 220px;
+  border-radius: 50%;
+}
+.user-card {
+  width: 700px;
+  min-height: 500px;
+  border-radius: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 8px 8px 14px #bfbfbf;
+}
+.user-name {
+  font-size: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.user-email {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.user-mobile {
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.admin-container {
+  margin: auto;
+}
+.admin-form {
+  height: 300px;
+  width: 400px;
+  border: 1px solid #bfbfbf;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px #bfbfbf;
+}
+.admin-heading {
+  font-size: 38px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.admin-label {
+  font-weight: bold;
+  margin: 0px 0px 8px 0px;
+}
