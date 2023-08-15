@@ -22,7 +22,9 @@ const AdminPanel = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost/users.php");
+      const response = await axios.get(
+        "http://localhost/backend-php/users.php"
+      );
       const { users } = response.data;
       setUsers(users);
     } catch (error) {
@@ -32,7 +34,7 @@ const AdminPanel = () => {
 
   const deleteUser = async (email) => {
     try {
-      await axios.post("http://localhost/delete.php", { email });
+      await axios.post("http://localhost/backend-php/delete.php", { email });
       fetchUsers();
     } catch (error) {
       console.error("Error deleting user:", error);
@@ -58,7 +60,7 @@ const AdminPanel = () => {
 
   const updateUser = async () => {
     try {
-      await axios.post("http://localhost/update.php", {
+      await axios.post("http://localhost/backend-php/update.php", {
         email: selectedUser.email,
         firstName: updateData.firstName,
         lastName: updateData.lastName,

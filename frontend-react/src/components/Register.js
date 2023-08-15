@@ -82,8 +82,9 @@ const Register = () => {
         formDataToSend.append("phoneNumber", formData.phoneNumber);
         formDataToSend.append("profilePic", formData.profilePic);
         formDataToSend.append("password", formData.password);
+        console.log(formDataToSend);
         const response = await axios.post(
-          "http://localhost/registration.php",
+          "http://localhost/backend-php/registration.php",
           formDataToSend,
           {
             headers: {
@@ -91,6 +92,7 @@ const Register = () => {
             },
           }
         );
+
         setServerStatus(true);
         setServerMsg(response.data);
         setIsLoading(false);

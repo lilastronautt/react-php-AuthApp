@@ -23,7 +23,10 @@ const Login = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost/login.php", formData);
+      const response = await axios.post(
+        "http://localhost/backend-php/login.php",
+        formData
+      );
 
       const responseData = response.data;
       setIsLoading(false);
