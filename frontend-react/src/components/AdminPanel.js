@@ -34,7 +34,7 @@ const AdminPanel = () => {
 
   const deleteUser = async (email) => {
     try {
-      await axios.post("http://localhost/backend-php/delete.php", { email });
+      await axios.post("https://amaankhan.net/delete.php", { email });
       fetchUsers();
     } catch (error) {
       console.error("Error deleting user:", error);
