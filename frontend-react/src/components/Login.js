@@ -24,7 +24,7 @@ const Login = () => {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost/backend-php/login.php",
+        "https://amaankhan.net/login.php",
         formData
       );
 
