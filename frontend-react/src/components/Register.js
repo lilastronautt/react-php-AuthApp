@@ -84,7 +84,7 @@ const Register = () => {
         formDataToSend.append("password", formData.password);
         console.log(formDataToSend);
         const response = await axios.post(
-          "http://localhost/backend-php/registration.php",
+          "https://amaankhan.net/registration.php",
           formDataToSend,
           {
             headers: {
