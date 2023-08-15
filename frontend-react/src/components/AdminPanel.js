@@ -23,7 +23,7 @@ const AdminPanel = () => {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost/backend-php/users.php"
+        "https://amaankhan.net/users.php"
       );
       const { users } = response.data;
       setUsers(users);
@@ -60,7 +60,7 @@ const AdminPanel = () => {
 
   const updateUser = async () => {
     try {
-      await axios.post("http://localhost/backend-php/update.php", {
+      await axios.post("https://amaankhan.net/update.php", {
         email: selectedUser.email,
         firstName: updateData.firstName,
         lastName: updateData.lastName,
